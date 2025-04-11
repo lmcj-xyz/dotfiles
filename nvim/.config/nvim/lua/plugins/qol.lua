@@ -5,6 +5,9 @@ return {
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
-        options = { theme = 'rose-pine' }
+        options = { theme = 'rose-pine' },
+        config = function()
+            require('lualine').setup({})
+        end
     }
 }

@@ -1,9 +1,8 @@
--- [ Options ]
--- Explore options using the :options command
--- notice that vim.o and vim.opt are not the same
--- vim.o is much more powerful and for the most part you don't need it
+-- Explore options using the :options command.
+-- Notice that vim.o and vim.opt are not the same
+-- vim.o is much more powerful and for the most part you don't need it.
 -- You want to use vim.opt for most options
--- or vim.opt_local or vim.opt_global when you want to specify the scope
+-- or vim.opt_local or vim.opt_global when you want to specify the scope.
 vim.opt.encoding = "utf-8"
 
 vim.opt.number = true

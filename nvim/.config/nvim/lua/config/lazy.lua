@@ -1,4 +1,4 @@
--- Bootstrap lazy.nvim
+-- [Bootstrap lazy.nvim]
 ---- `vim.fn` allows us to invoque vim functions in lua
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
