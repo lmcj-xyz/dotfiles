@@ -1,4 +1,3 @@
-local lspconfig = require('lspconfig')
 local pyright_override = {
     settings = {
         pyright = {
@@ -31,6 +30,7 @@ local ltex_override = {
     }
 }
 
+local lspconfig = require('lspconfig')
 lspconfig.clangd.setup({}) --installed with dnf
 lspconfig.ruff.setup({}) --installed with uv
 lspconfig.pyright.setup(pyright_override) --installed with pip 
@@ -64,11 +64,11 @@ vim.keymap.set({ 'n' }, '<leader>q', vim.diagnostic.setloclist, { desc = 'Open d
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('lsp-attach', { clear = true }),
     callback = function(event)
-        vim.keymap.set({ 'n' },         'grn', vim.lsp.buf.rename,          { buffer = event.buf, desc = 'LSP: [R]e[n]ame variable under cursor'})
-        vim.keymap.set({ 'n', 'x' },    'gra', vim.lsp.buf.code_action,     { buffer = event.buf, desc = 'LSP: [G]o to code [A]ction'})
-        vim.keymap.set({ 'n' },         'grr', vim.lsp.buf.references,      { buffer = event.buf, desc = 'LSP: [G]o to [R]references'})
-        vim.keymap.set({ 'n' },         'gri', vim.lsp.buf.implementation,  { buffer = event.buf, desc = 'LSP: [G]o to [I]mplementation'})
-        vim.keymap.set({ 'n' },         'grD', vim.lsp.buf.declaration,     { buffer = event.buf, desc = 'LSP: [G]o to [D]eclaration'})
-        vim.keymap.set({ 'n' },         'grd', vim.lsp.buf.definition,      { buffer = event.buf, desc = 'LSP: [G]o to [D]efinition'})
+        vim.keymap.set({'n'}, 'grn', vim.lsp.buf.rename, {buffer = event.buf, desc = 'LSP: [R]e[n]ame variable under cursor'})
+        vim.keymap.set({'n'}, 'grr', vim.lsp.buf.references, {buffer = event.buf, desc = 'LSP: [G]o to [R]references'})
+        vim.keymap.set({'n'}, 'gri', vim.lsp.buf.implementation, {buffer = event.buf, desc = 'LSP: [G]o to [I]mplementation'})
+        vim.keymap.set({'n'}, 'grD', vim.lsp.buf.declaration, {buffer = event.buf, desc = 'LSP: [G]o to [D]eclaration'})
+        vim.keymap.set({'n'}, 'grd', vim.lsp.buf.definition, {buffer = event.buf, desc = 'LSP: [G]o to [D]efinition'})
+        vim.keymap.set({'n', 'x'}, 'gra', vim.lsp.buf.code_action, {buffer = event.buf, desc = 'LSP: [G]o to code [A]ction'})
     end
 })
