@@ -24,9 +24,9 @@ require("lazy").setup({
     { import = "plugins.lspconfig" },
     { import = "plugins.qol" },
     { import = "plugins.treesitter" },
+    { import = "plugins.vimtex" },
     -- { import = "plugins.neorg" },
     -- { import = "plugins.orgmode" },
-    { import = "plugins.vimtex" },
   },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
