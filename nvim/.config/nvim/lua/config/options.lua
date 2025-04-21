@@ -36,7 +36,7 @@ vim.opt.breakindent = true --keep line breaks indented
 
 vim.wo.signcolumn = 'yes' --makes the sign column be always present, helpful to avoid the shifting when the LSP parses
 
-vim.opt.completeopt = 'menu,menuone,noselect,preview'
+vim.opt.completeopt = 'menu,menuone,noselect,preview,fuzzy'
 
 vim.opt.spell = true
 vim.opt.spelllang = { 'en', 'es_mx' }
