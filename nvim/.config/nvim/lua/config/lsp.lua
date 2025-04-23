@@ -60,6 +60,8 @@ vim.diagnostic.config({
 
 vim.keymap.set({ 'n' }, '<leader>d', vim.diagnostic.open_float, { desc = 'Open [D]iagnostics floating window' })
 vim.keymap.set({ 'n' }, '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics [Q]uickfix list' })
+vim.keymap.set({ 'n' }, '<leader>n', function() vim.diagnostic.jump({count=1, float=true}) end, { desc = 'Go to [N]ext diagnostic' })
+vim.keymap.set({ 'n' }, '<leader>p', function() vim.diagnostic.jump({count=-1, float=true}) end, { desc = 'Go to [P]revious diagnostic' })
 
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('lsp-attach', { clear = true }),
