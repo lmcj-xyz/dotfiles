@@ -8,6 +8,10 @@ return {
         config = function()
             require('lualine').setup({})
         end
-    }
+    },
     --{ '3rd/image.nvim', },
+    {
+    "mason-org/mason.nvim",
+    opts = {}
+    },
 }

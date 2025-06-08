@@ -30,15 +30,16 @@ local ltex_override = {
     }
 }
 
+-- Using mason now
 local lspconfig = require('lspconfig')
-lspconfig.clangd.setup({}) --installed with dnf
-lspconfig.ruff.setup({}) --installed with uv
-lspconfig.pyright.setup(pyright_override) --installed with pip 
-lspconfig.lua_ls.setup({}) --installed from releases (https://github.com/LuaLS/lua-language-server/releases)
-lspconfig.elmls.setup({}) --installed with npm
-lspconfig.hls.setup({}) --installed with GHCup
-lspconfig.ltex.setup(ltex_override) --installed from releases (https://github.com/valentjn/ltex-ls/releases)
-lspconfig.harper_ls.setup({}) --installed from releases (https://github.com/Automattic/harper/releases)
+lspconfig.clangd.setup({})                  --if not with mason, install with dnf
+lspconfig.ruff.setup({})                    --if not with mason, install with uv
+lspconfig.pyright.setup(pyright_override)   --if not with mason, install with pip 
+lspconfig.lua_ls.setup({})                  --if not with mason, install from releases (https://github.com/LuaLS/lua-language-server/releases)
+lspconfig.elmls.setup({})                   --if not with mason, install with npm
+lspconfig.hls.setup({})                     --if not with mason, install with GHCup
+lspconfig.ltex.setup(ltex_override)         --if not with mason, install from releases (https://github.com/valentjn/ltex-ls/releases)
+lspconfig.harper_ls.setup({})               --if not with mason, install from releases (https://github.com/Automattic/harper/releases)
 
 vim.diagnostic.config({
     serverity_sort = true,
