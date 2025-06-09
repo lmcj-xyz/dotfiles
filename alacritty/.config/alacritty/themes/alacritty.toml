@@ -48,8 +48,7 @@ print_events = false
 render_timer = false
 
 [env]
-#term = "alacritty"
-term = "xterm-256color"
+TERM = "alacritty"
 
 [font]
 builtin_box_drawing = true
