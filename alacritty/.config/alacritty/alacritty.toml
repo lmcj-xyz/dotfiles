@@ -56,11 +56,11 @@ builtin_box_drawing = true
 size = 14
 
 [font.bold]
-family = "JuliaMono"
+family = "JuliaMonoNerdFontMono"
 style = "Bold"
 
 [font.bold_italic]
-family = "JuliaMono"
+family = "JuliaMonoNerdFontMono"
 style = "Bold Italic"
 
 [font.glyph_offset]
@@ -68,11 +68,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "JuliaMono"
+family = "JuliaMonoNerdFontMono"
 style = "Italic"
 
 [font.normal]
-family = "JuliaMono"
+family = "JuliaMonoNerdFontMono"
 style = "Regular"
 
 [font.offset]
