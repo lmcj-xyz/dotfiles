@@ -38,7 +38,7 @@ lspconfig.pyright.setup(pyright_override)   --if not with mason, install with pi
 lspconfig.lua_ls.setup({})                  --if not with mason, install from releases (https://github.com/LuaLS/lua-language-server/releases)
 lspconfig.elmls.setup({})                   --if not with mason, install with npm
 lspconfig.hls.setup({})                     --if not with mason, install with GHCup
-lspconfig.ltex.setup(ltex_override)         --if not with mason, install from releases (https://github.com/valentjn/ltex-ls/releases)
+lspconfig.ltex_plus.setup(ltex_override)         --if not with mason, install from releases (https://github.com/valentjn/ltex-ls/releases)
 lspconfig.harper_ls.setup({})               --if not with mason, install from releases (https://github.com/Automattic/harper/releases)
 
 vim.diagnostic.config({
