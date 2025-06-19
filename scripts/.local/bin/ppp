@@ -1,0 +1,18 @@
+#!/usr/bin/bash
+HOST=$(hostname)
+case $HOST in
+    "Precision-5820-Tower-X-Series") 
+        PROJECTS_DIR='~/Projects/' 
+        printf "at work\n$HOST\n"
+        # printf "$PROJECTS_DIR\n"
+        ;;
+    "tari")
+        printf "at laptop\n$HOST\n"
+        ;;
+    "chamari")
+        printf "at desktop\n$HOST\n"
+        ;;
+esac
+printf "Name of the project: "
+read PROJ
+mkdir "$PROJECTS_DIR/$PROJ"
