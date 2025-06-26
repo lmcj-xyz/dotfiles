@@ -558,7 +558,7 @@ args = ["--login"]
 program = "/bin/bash"
 
 [window]
-decorations = "Full"
+decorations = "None"
 dynamic_padding = false
 dynamic_title = true
 #gtk_theme_variant = "None"
