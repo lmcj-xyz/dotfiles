@@ -13,9 +13,8 @@
         "niri/window",
     ],
     "modules-right": [
-        "clock",
         "tray",
-        "custom/power",
+        "clock",
     ],
     "tray": {
         // "icon-size": 21,
