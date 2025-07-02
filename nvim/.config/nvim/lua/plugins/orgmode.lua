@@ -1,4 +1,4 @@
-local org_directory = '~/Toma de notas/Org/'
+local org_directory = '~/Notas'
 return {
     'chipsenkbeil/org-roam.nvim',
     tag = '0.1.1',
@@ -24,6 +24,9 @@ return {
     config = function()
         require('org-roam').setup({
             directory = org_directory,
+            bindings = {
+                prefix = "<LocalLeader>r",
+            },
             -- optional
             --org_files = {
                 --    '~/another_org_dir',
