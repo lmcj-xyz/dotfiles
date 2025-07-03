@@ -14,6 +14,10 @@ vim.api.nvim_create_autocmd(
 -- Not do anything if only space is pressed in normal or visual mode
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
+-- Buffer navigation
+vim.keymap.set({'n'}, '<leader>bn', vim.cmd.bnext, {desc='Go to next buffer in buffer list'})
+vim.keymap.set({'n'}, '<leader>bp', vim.cmd.bprevious, {desc='Go to previous buffer in buffer list'})
+
 -- Remap for dealing with word wrap.
 -- Allows you to change wrapped lines within long lines.
 -- Essentially, if there is no count before the commands k or j it makes a gk or gj
