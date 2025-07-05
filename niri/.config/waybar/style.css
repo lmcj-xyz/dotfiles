@@ -6,7 +6,7 @@
 
 window#waybar {
     background-color: black;
-    border-bottom: 2px solid grey;
+    /* border-bottom: 2px solid grey; */
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -14,7 +14,7 @@ window#waybar {
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */
-    box-shadow: inset 0 -3px transparent;
+    /* box-shadow: inset 0 -3px transparent; */
     /* Avoid rounded borders under each button name */
     border: none;
     border-radius: 0;
@@ -22,13 +22,13 @@ button {
 
 button:hover {
     background: inherit;
-    box-shadow: inset 0 -3px #ffffff;
+    /* box-shadow: inset 0 -3px #ffffff; */
 }
 
 #workspaces button {
     padding: 0 5px;
     background-color: transparent;
-    color: #ffffff;
+    color: #444444;
 }
 
 #workspaces button:hover {
@@ -36,12 +36,14 @@ button:hover {
 }
 
 #workspaces button.focused {
-    background-color: #64727D;
-    box-shadow: inset 0 -3px #ffffff;
+    background-color: transparent;
+    /* box-shadow: inset 0 -3px #ffffff; */
+    color: #ffffff;
 }
 
 #workspaces button.urgent {
-    background-color: #eb4d4b;
+    /* background-color: #eb4d4b; */
+    color: #eb4d4b;
 }
 
 #clock,
@@ -58,11 +60,11 @@ button:hover {
 
 #clock {
     background-color: black;
-    border-bottom: 2px solid grey;
+    /* border-bottom: 2px solid grey; */
 }
 #tray {
     background-color: black;
-    border-bottom: 2px solid grey;
+    /* border-bottom: 2px solid grey; */
 }
 
 #tray > .passive {

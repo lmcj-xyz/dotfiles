@@ -10,19 +10,34 @@
         "niri/workspaces",
     ],
     "modules-center": [
-        "niri/window",
+        //"niri/window",
+        "clock",
     ],
     "modules-right": [
         "tray",
-        "clock",
+        "custom/power"
     ],
+    "niri/workspaces": {
+        "format": "{value} {icon}",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        }
+    },
     "tray": {
         // "icon-size": 21,
         "spacing": 10
     },
     "clock": {
         // "timezone": "America/New_York",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "tooltip-format": "<tt>{calendar}</tt>",
+        "format": "   {:%H:%M}",
+        "format-alt": "   {:%Y-%m-%d}"
+
     },
+    "custom/power": {
+        "format" : "󰤆 ",
+        "tooltip": false,
+        "on-click": "wlogout"
+    }
 }
