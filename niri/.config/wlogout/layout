@@ -1,36 +1,36 @@
 {
     "label" : "lock",
-    "action" : "swaylock -s fill -k -i '/home/lmcj/Imágenes/Fondos/plum-blossoms.jpg'",
-    "text" : "Lock",
+    "action" : "swaylock -s fill -k -i '/home/firefly/Imágenes/03-recursos/wallpapers/plum-blossoms.jpg'",
+    "text" : "Lock (l)",
     "keybind" : "l"
-}
-{
-    "label" : "hibernate",
-    "action" : "systemctl hibernate",
-    "text" : "Hibernate",
-    "keybind" : "h"
 }
 {
     "label" : "logout",
     "action" : "loginctl terminate-user $USER",
-    "text" : "Logout",
+    "text" : "Logout (e)",
     "keybind" : "e"
 }
 {
     "label" : "shutdown",
     "action" : "systemctl poweroff",
-    "text" : "Shutdown",
+    "text" : "Shutdown (s)",
     "keybind" : "s"
 }
 {
     "label" : "suspend",
-    "action" : "systemctl suspend && swaylock -s fill -k -i '/home/lmcj/Imágenes/Fondos/plum-blossoms.jpg'",
-    "text" : "Suspend",
+    "action" : "systemctl suspend && swaylock -s fill -k -i '/home/firefly/Imágenes/03-recursos/wallpapers/plum-blossoms.jpg'",
+    "text" : "Suspend (u)",
     "keybind" : "u"
 }
 {
     "label" : "reboot",
     "action" : "systemctl reboot",
-    "text" : "Reboot",
+    "text" : "Reboot (r)",
     "keybind" : "r"
+}
+{
+    "label" : "hibernate",
+    "action" : "systemctl hibernate",
+    "text" : "Hibernate (h)",
+    "keybind" : "h"
 }
