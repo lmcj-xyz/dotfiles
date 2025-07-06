@@ -22,32 +22,46 @@ button {
 
 button:hover {
     background: inherit;
-    /* box-shadow: inset 0 -3px #ffffff; */
 }
 
 #workspaces button {
-    padding: 0 5px;
+    padding-top: 0px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    padding-left: 5px;
     background-color: transparent;
     color: #444444;
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    1px;
+	margin-right:   1px;
+	border-radius:  20px;
 }
 
 #workspaces button:hover {
-    background: rgba(0, 0, 0, 0.2);
+	color:          white;
+	background:     #333333;
+	transition:     none;
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    1px;
+	margin-right:   1px;
+	border-radius:  20px;
 }
 
 #workspaces button.focused {
     background-color: transparent;
-    /* box-shadow: inset 0 -3px #ffffff; */
+    color: #ffffff;
+}
+#workspaces button.focused:hover {
+    background-color: #333333;
     color: #ffffff;
 }
 
 #workspaces button.urgent {
-    /* background-color: #eb4d4b; */
-    color: #eb4d4b;
+    background-color: #eb4d4b;
+    color: #4BE8EB;
 }
-
-#clock,
-#tray,
 
 #workspaces {
     margin: 0 4px;
@@ -58,13 +72,37 @@ button:hover {
     margin-left: 0;
 }
 
+
 #clock {
-    background-color: black;
-    /* border-bottom: 2px solid grey; */
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    3px;
+	margin-right:   3px;
+	padding-left:   9px;
+	padding-right:  9px;
+	border-radius:  20px;
+	transition:     none;
+	color:          white;
+	background:     black;
 }
+
+#clock:hover {
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    3px;
+	margin-right:   3px;
+	padding-left:   9px;
+	padding-right:  9px;
+	border-radius:  20px;
+	transition:     none;
+	color:          white;
+	background:     #333333;
+}
+
+#tray
+
 #tray {
     background-color: black;
-    /* border-bottom: 2px solid grey; */
 }
 
 #tray > .passive {
@@ -74,4 +112,29 @@ button:hover {
 #tray > .needs-attention {
     -gtk-icon-effect: highlight;
     background-color: #eb4d4b;
+}
+
+#custom-power {
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    3px;
+	margin-right:   3px;
+	padding-left:   9px;
+	padding-right:  9px;
+	border-radius:  20px;
+	transition:     none;
+	color:          white;
+	background:     black;
+}
+#custom-power:hover {
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    3px;
+	margin-right:   3px;
+	padding-left:   9px;
+	padding-right:  9px;
+	border-radius:  20px;
+	transition:     none;
+	color:          white;
+	background:     #333333;
 }

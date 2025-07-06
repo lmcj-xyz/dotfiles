@@ -4,7 +4,7 @@
 # vi mode
 set -o vi
 # Editor
-EDITOR=/usr/bin/nvim
-VISUAL=/usr/bin/nvim
-SUDO_EDITOR=/usr/bin/nvim
-GIT_EDITOR=/usr/bin/nvim
+export EDITOR=/usr/bin/nvim
+export VISUAL=/usr/bin/nvim
+export SUDO_EDITOR=/usr/bin/nvim
+export GIT_EDITOR=/usr/bin/nvim
