@@ -4,7 +4,15 @@
 # vi mode
 set -o vi
 # Editor
-export EDITOR=/usr/bin/nvim
-export VISUAL=/usr/bin/nvim
-export SUDO_EDITOR=/usr/bin/nvim
-export GIT_EDITOR=/usr/bin/nvim
+case $(hostname) in
+    Precision-5820-Tower-X-Series)
+    export EDITOR=/opt/nvim-linux-x86_64/bin/nvim
+    export VISUAL=/opt/nvim-linux-x86_64/bin/nvim
+    export SUDO_EDITOR=/opt/nvim-linux-x86_64/bin/nvim
+    export GIT_EDITOR=/opt/nvim-linux-x86_64/bin/nvim;;
+    chamari)
+    export EDITOR=/usr/bin/nvim
+    export VISUAL=/usr/bin/nvim
+    export SUDO_EDITOR=/usr/bin/nvim
+    export GIT_EDITOR=/usr/bin/nvim;;
+esac
