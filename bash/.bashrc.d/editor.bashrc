@@ -4,7 +4,7 @@
 # vi mode
 set -o vi
 # Editor
-case $(hostname) in
+case $(cat /etc/hostname) in
     Precision-5820-Tower-X-Series)
     export EDITOR=/opt/nvim-linux-x86_64/bin/nvim
     export VISUAL=/opt/nvim-linux-x86_64/bin/nvim
