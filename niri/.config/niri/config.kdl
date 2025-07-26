@@ -259,6 +259,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "gammastep" "-l" "53.80075540:-1.54907740"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "syncthing" "serve" "--no-browser"
+spawn-at-startup "swww-daemon" "&&" "swww" "img" "~/Imágenes/03-recursos/wallpapers/plum-blossoms.jpg"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -344,10 +345,10 @@ binds {
     Mod+Shift+Slash { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return hotkey-overlay-title="Open a Terminal: alacritty" { spawn "alacritty"; }
-    Mod+Space hotkey-overlay-title="Run an Application: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
-    Mod+Alt+P hotkey-overlay-title="Open wlogout dialog" { spawn "wlogout"; }
+    Mod+Return hotkey-overlay-title="Abrir terminal: alacritty" { spawn "alacritty"; }
+    Mod+Space hotkey-overlay-title="Ejecutar applicación: fuzzel" { spawn "fuzzel"; }
+    Super+Alt+L hotkey-overlay-title="Bloquear pantalla: swaylock" { spawn "swaylock" "-s" "fill" "-k" "-i" "'/home/firefly/Imágenes/03-recursos/wallpapers/plum-blossoms.jpg'"; }
+    Mod+Alt+P hotkey-overlay-title="Abrir diálogo de sesión: wlogout" { spawn "wlogout"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument in the end.
@@ -363,23 +364,23 @@ binds {
     // Open/close the Overview: a zoomed-out view of workspaces and windows.
     // You can also move the mouse into the top-left hot corner,
     // or do a four-finger swipe up on a touchpad.
-    Mod+O repeat=false { toggle-overview; }
+    Mod+O hotkey-overlay-title="Mostrar overlay" repeat=false { toggle-overview; }
 
-    Mod+Q { close-window; }
+    Mod+Q hotkey-overlay-title="Cerrar ventana" { close-window; }
 
-    Mod+Left  { focus-column-left; }
+    Mod+Left hotkey-overlay-title="Enfocar columna a la izquierda" { focus-column-left; }
     Mod+Down  { focus-window-down; }
     Mod+Up    { focus-window-up; }
-    Mod+Right { focus-column-right; }
+    Mod+Right hotkey-overlay-title="Enfocar columna a la derecha" { focus-column-right; }
     Mod+H     { focus-column-left; }
     Mod+J     { focus-window-down; }
     Mod+K     { focus-window-up; }
     Mod+L     { focus-column-right; }
 
-    Mod+Ctrl+Left  { move-column-left; }
+    Mod+Ctrl+Left hotkey-overlay-title="Mover columna a la izquierda" { move-column-left; }
     Mod+Ctrl+Down  { move-window-down; }
     Mod+Ctrl+Up    { move-window-up; }
-    Mod+Ctrl+Right { move-column-right; }
+    Mod+Ctrl+Right hotkey-overlay-title="Mover columna a la derecha" { move-column-right; }
     Mod+Ctrl+H     { move-column-left; }
     Mod+Ctrl+J     { move-window-down; }
     Mod+Ctrl+K     { move-window-up; }
