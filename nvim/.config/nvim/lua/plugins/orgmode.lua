@@ -11,11 +11,11 @@ return {
                     org_agenda_files = org_directory .. '**/*',
                     org_default_notes_file = org_directory .. 'refile.org',
                     org_capture_templates = {
-                        r = {
-                            description = 'Repo',
-                            template = "* [[%x][%(return string.match('%x', '([^/]+)$'))]]%?",
-                            target = org_directory .. 'repos.org',
-                        },
+                        -- r = {
+                        --     description = 'Repo',
+                        --     template = "* [[%x][%(return string.match('%x', '([^/]+)$'))]]%?",
+                        --     target = org_directory .. 'repos.org',
+                        -- },
                     },
                 })
             end,
