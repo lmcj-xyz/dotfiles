@@ -260,7 +260,7 @@ spawn-at-startup "mako"
 spawn-at-startup "gammastep" "-l" "53.80075540:-1.54907740"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "syncthing" "serve" "--no-browser"
-spawn-at-startup "swaybg" "--image" "/home/firefly/Imágenes/03-recursos/wallpapers/plum-blossoms.jpg"
+spawn-at-startup "swaybg" "--image" "/home/firefly/Imágenes/wallpapers/plum-blossoms.jpg"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -348,7 +348,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Abrir terminal: alacritty" { spawn "alacritty"; }
     Mod+Space hotkey-overlay-title="Ejecutar applicación: fuzzel" { spawn "fuzzel"; }
-    Super+Alt+L hotkey-overlay-title="Bloquear pantalla: swaylock" { spawn "swaylock" "-s" "fill" "-k" "-i" "'/home/firefly/Imágenes/03-recursos/wallpapers/plum-blossoms.jpg'"; }
+    Super+Alt+L hotkey-overlay-title="Bloquear pantalla: swaylock" { spawn "swaylock" "-s" "fill" "-k" "-i" "'/home/firefly/Imágenes/wallpapers/plum-blossoms.jpg'"; }
     Mod+Alt+P hotkey-overlay-title="Abrir diálogo de sesión: wlogout" { spawn "wlogout"; }
 
     // You can also use a shell. Do this if you need pipes, multiple commands, etc.
