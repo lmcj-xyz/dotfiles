@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "swaylock -s fill -k -i '/home/firefly/Imágenes/03-recursos/wallpapers/plum-blossoms.jpg'",
+    "action" : "swaylock -s fill -k -i '/home/firefly/Imágenes/wallpapers/plum-blossoms.jpg'",
     "text" : "Bloquear (b)",
     "keybind" : "b"
 }
@@ -18,7 +18,7 @@
 }
 {
     "label" : "suspend",
-    "action" : "systemctl suspend && swaylock -s fill -k -i '/home/firefly/Imágenes/03-recursos/wallpapers/plum-blossoms.jpg'",
+    "action" : "systemctl suspend && swaylock -s fill -k -i '/home/firefly/Imágenes/wallpapers/plum-blossoms.jpg'",
     "text" : "Suspender (s)",
     "keybind" : "s"
 }

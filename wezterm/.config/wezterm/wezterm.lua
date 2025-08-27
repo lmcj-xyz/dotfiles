@@ -10,9 +10,11 @@ local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
 config.font = wezterm.font 'JuliaMono'
 
 config.colors = theme.colors()
+config.colors.cursor_fg = 'ffffff'
+config.colors.cursor_bg = 'ff00ff'
 config.window_frame = theme.window_frame()
 
-config.font_size = 16
+config.font_size = 14
 config.hide_tab_bar_if_only_one_tab = true
 config.window_decorations = 'TITLE | RESIZE'
 
