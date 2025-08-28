@@ -39,6 +39,7 @@ lspconfig.lua_ls.setup({})                  --if not with mason, install from re
 lspconfig.elmls.setup({})                   --if not with mason, install with npm
 lspconfig.hls.setup({})                     --if not with mason, install with GHCup
 lspconfig.ltex_plus.setup(ltex_override)         --if not with mason, install from releases (https://github.com/valentjn/ltex-ls/releases)
+lspconfig.bashls.setup({})
 --lspconfig.harper_ls.setup({})               --if not with mason, install from releases (https://github.com/Automattic/harper/releases)
 
 vim.diagnostic.config({
