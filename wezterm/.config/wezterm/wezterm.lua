@@ -7,7 +7,7 @@ local config = wezterm.config_builder()
 local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
 
 -- This is where you actually apply your config choices
-config.font = wezterm.font 'JuliaMono'
+config.font = wezterm.font 'JuliaMonoNerdFont'
 
 config.colors = theme.colors()
 config.colors.cursor_fg = 'ffffff'
