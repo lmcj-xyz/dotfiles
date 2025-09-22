@@ -4,7 +4,7 @@ Configuration directory managed with [GNU Stow](https://www.gnu.org/software/sto
 - Within the `Dotfiles` directory you run `stow <whatever directory>`.
 - This will make a symbolic link into whatever directory structure you have set up.
 - Done.
-## Examples
+## How to...
 ### XDG compliant configuration
 - Neovim's configuration is in the top level directory `nvim`.
 - The `nvim` directory has the directories `.config/nvim` this specifies the path where I will have my configuration.
