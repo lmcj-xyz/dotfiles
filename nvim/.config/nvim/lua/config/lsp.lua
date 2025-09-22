@@ -30,9 +30,18 @@ local ltex_override = {
     }
 }
 
+local hls_override = {
+    settings = {
+        haskell = {
+            formattingProvider = 'fourmolu'
+        }
+    }
+}
+
 -- Using mason now
 vim.lsp.config('pyright', pyright_override)
 vim.lsp.config('ltex_plus', ltex_override)
+vim.lsp.config('hls', hls_override)
 
 vim.lsp.enable('clangd')
 vim.lsp.enable('ruff')
@@ -40,6 +49,7 @@ vim.lsp.enable('pyright')
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('elmls')
 vim.lsp.enable('hls')
+vim.lsp.enable('fourmolu')
 vim.lsp.enable('ltex_plus')
 vim.lsp.enable('bashls')
 vim.lsp.enable('ocamllsp')
