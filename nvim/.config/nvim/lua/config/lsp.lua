@@ -86,6 +86,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
         vim.keymap.set({'n'}, 'gri', vim.lsp.buf.implementation, {buffer = event.buf, desc = 'LSP: [G]o to [I]mplementation'})
         vim.keymap.set({'n'}, 'grD', vim.lsp.buf.declaration, {buffer = event.buf, desc = 'LSP: [G]o to [D]eclaration'})
         vim.keymap.set({'n'}, 'grd', vim.lsp.buf.definition, {buffer = event.buf, desc = 'LSP: [G]o to [D]efinition'})
+        vim.keymap.set({'n'}, 'grf', vim.lsp.buf.format, {buffer = event.buf, desc = 'LSP: [G]o and [R]e[F]ormat'})
         vim.keymap.set({'n', 'x'}, 'gra', vim.lsp.buf.code_action, {buffer = event.buf, desc = 'LSP: [G]o to code [A]ction'})
     end
 })
