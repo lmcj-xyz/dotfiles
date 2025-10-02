@@ -44,6 +44,7 @@ vim.lsp.config('ltex_plus', ltex_override)
 vim.lsp.config('hls', hls_override)
 
 vim.lsp.enable('clangd')
+vim.lsp.enable('gopls')
 vim.lsp.enable('ruff')
 vim.lsp.enable('pyright')
 vim.lsp.enable('lua_ls')
