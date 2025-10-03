@@ -45,7 +45,7 @@ vim.lsp.config('hls', hls_override)
 
 vim.lsp.enable('clangd')
 vim.lsp.enable('gopls')
-vim.lsp.enable('golangci_lint_ls')
+-- vim.lsp.enable('golangci_lint_ls')
 vim.lsp.enable('ruff')
 vim.lsp.enable('pyright')
 vim.lsp.enable('lua_ls')
