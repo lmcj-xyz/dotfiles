@@ -1,5 +1,5 @@
 return {
-    { 'folke/which-key.nvim', opts = {} },
+    { 'folke/which-key.nvim',                opts = {} },
     { 'lukas-reineke/indent-blankline.nvim', main = "ibl", opts = {} },
     {
         'nvim-lualine/lualine.nvim',
@@ -11,7 +11,13 @@ return {
     },
     --{ '3rd/image.nvim', },
     {
-    "mason-org/mason.nvim",
-    opts = {}
+        "mason-org/mason.nvim",
+        opts = {}
+    },
+    {
+        "m4xshen/hardtime.nvim",
+        lazy = false,
+        dependencies = { "MunifTanjim/nui.nvim" },
+        opts = {},
     },
 }
