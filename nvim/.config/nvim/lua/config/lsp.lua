@@ -21,7 +21,7 @@ local ltex_override = {
     filetypes = { "latex", "tex", "bib", },
     settings = {
         ltex = {
-            enabled = {'bib', 'context', 'latex', 'plaintex', 'tex'},
+            enabled = { 'bib', 'context', 'latex', 'plaintex', 'tex' },
             language = 'en-GB',
             dictionary = {
                 ["en-GB"] = eng_dict,
@@ -45,6 +45,7 @@ vim.lsp.config('hls', hls_override)
 
 vim.lsp.enable('clangd')
 vim.lsp.enable('gopls')
+vim.lsp.enable('golangci_lint_ls')
 vim.lsp.enable('ruff')
 vim.lsp.enable('pyright')
 vim.lsp.enable('lua_ls')
@@ -76,18 +77,23 @@ vim.diagnostic.config({
 
 vim.keymap.set({ 'n' }, '<leader>d', vim.diagnostic.open_float, { desc = 'Open [D]iagnostics floating window' })
 vim.keymap.set({ 'n' }, '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics [Q]uickfix list' })
-vim.keymap.set({ 'n' }, '<leader>n', function() vim.diagnostic.jump({count=1, float=true}) end, { desc = 'Go to [N]ext diagnostic' })
-vim.keymap.set({ 'n' }, '<leader>p', function() vim.diagnostic.jump({count=-1, float=true}) end, { desc = 'Go to [P]revious diagnostic' })
+vim.keymap.set({ 'n' }, '<leader>n', function() vim.diagnostic.jump({ count = 1, float = true }) end,
+    { desc = 'Go to [N]ext diagnostic' })
+vim.keymap.set({ 'n' }, '<leader>p', function() vim.diagnostic.jump({ count = -1, float = true }) end,
+    { desc = 'Go to [P]revious diagnostic' })
 
 vim.api.nvim_create_autocmd('LspAttach', {
     group = vim.api.nvim_create_augroup('lsp-attach', { clear = true }),
     callback = function(event)
-        vim.keymap.set({'n'}, 'grn', vim.lsp.buf.rename, {buffer = event.buf, desc = 'LSP: [R]e[n]ame variable under cursor'})
-        vim.keymap.set({'n'}, 'grr', vim.lsp.buf.references, {buffer = event.buf, desc = 'LSP: [G]o to [R]references'})
-        vim.keymap.set({'n'}, 'gri', vim.lsp.buf.implementation, {buffer = event.buf, desc = 'LSP: [G]o to [I]mplementation'})
-        vim.keymap.set({'n'}, 'grD', vim.lsp.buf.declaration, {buffer = event.buf, desc = 'LSP: [G]o to [D]eclaration'})
-        vim.keymap.set({'n'}, 'grd', vim.lsp.buf.definition, {buffer = event.buf, desc = 'LSP: [G]o to [D]efinition'})
-        vim.keymap.set({'n'}, 'grf', vim.lsp.buf.format, {buffer = event.buf, desc = 'LSP: [G]o and [R]e[F]ormat'})
-        vim.keymap.set({'n', 'x'}, 'gra', vim.lsp.buf.code_action, {buffer = event.buf, desc = 'LSP: [G]o to code [A]ction'})
+        vim.keymap.set({ 'n' }, 'grn', vim.lsp.buf.rename,
+            { buffer = event.buf, desc = 'LSP: [R]e[n]ame variable under cursor' })
+        vim.keymap.set({ 'n' }, 'grr', vim.lsp.buf.references, { buffer = event.buf, desc = 'LSP: [G]o to [R]references' })
+        vim.keymap.set({ 'n' }, 'gri', vim.lsp.buf.implementation,
+            { buffer = event.buf, desc = 'LSP: [G]o to [I]mplementation' })
+        vim.keymap.set({ 'n' }, 'grD', vim.lsp.buf.declaration, { buffer = event.buf, desc = 'LSP: [G]o to [D]eclaration' })
+        vim.keymap.set({ 'n' }, 'grd', vim.lsp.buf.definition, { buffer = event.buf, desc = 'LSP: [G]o to [D]efinition' })
+        vim.keymap.set({ 'n' }, 'grf', vim.lsp.buf.format, { buffer = event.buf, desc = 'LSP: [G]o and [R]e[F]ormat' })
+        vim.keymap.set({ 'n', 'x' }, 'gra', vim.lsp.buf.code_action,
+            { buffer = event.buf, desc = 'LSP: [G]o to code [A]ction' })
     end
 })
