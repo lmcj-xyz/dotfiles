@@ -21,7 +21,7 @@ vim.opt.shiftwidth = 4
 
 vim.opt.clipboard = 'unnamedplus' --sync system's and neovim's clipboard
 
-vim.opt.scrolloff = 999
+vim.opt.scrolloff = 10
 
 vim.opt.virtualedit = 'block' --allow for all the screen to be available in block mode
 
