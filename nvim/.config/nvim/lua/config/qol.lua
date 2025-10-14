@@ -26,3 +26,6 @@ vim.keymap.set({'n'}, '<leader>bp', vim.cmd.bprevious, {desc='Go to previous buf
 -- You can simply use gk or gj if you don't want these mappings
 --vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 --vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
+
+-- Color scheme selection
+vim.cmd.colorscheme('kanagawa-dragon')
