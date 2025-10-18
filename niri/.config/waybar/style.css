@@ -100,11 +100,19 @@ button:hover {
 	background:     #333333;
 }
 
-#tray
-
 #tray {
-    background-color: black;
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    3px;
+	margin-right:   3px;
+	padding-left:   9px;
+	padding-right:  9px;
+	border-radius:  20px;
+	transition:     none;
+	color:          white;
+	background:     black;
 }
+
 
 #tray > .passive {
     -gtk-icon-effect: dim;
@@ -128,6 +136,31 @@ button:hover {
 	background:     black;
 }
 #custom-power:hover {
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    3px;
+	margin-right:   3px;
+	padding-left:   9px;
+	padding-right:  9px;
+	border-radius:  20px;
+	transition:     none;
+	color:          white;
+	background:     #333333;
+}
+
+#wireplumber {
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    3px;
+	margin-right:   3px;
+	padding-left:   9px;
+	padding-right:  9px;
+	border-radius:  20px;
+	transition:     none;
+	color:          white;
+	background:     black;
+}
+#wireplumber:hover {
     margin-top:     3px;
 	margin-bottom:  3px;
 	margin-left:    3px;

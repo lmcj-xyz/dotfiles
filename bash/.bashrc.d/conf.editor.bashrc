@@ -20,4 +20,9 @@ case $(cat /etc/hostname) in
     export VISUAL=/usr/bin/nvim
     export SUDO_EDITOR=/usr/bin/nvim
     export GIT_EDITOR=/usr/bin/nvim;;
+    rimo)
+    export EDITOR=/opt/nvim/bin/nvim
+    export VISUAL=/opt/nvim/bin/nvim
+    export SUDO_EDITOR=/opt/nvim/bin/nvim
+    export GIT_EDITOR=/opt/nvim/bin/nvim
 esac

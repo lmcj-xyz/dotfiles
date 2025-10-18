@@ -1,6 +1,6 @@
-local pyright_override = {
+local based_pyright_override = {
     settings = {
-        pyright = {
+        basedpyright = {
             -- Using Ruff's import organizer
             disableOrganizeImports = true,
         },
@@ -39,7 +39,7 @@ local hls_override = {
 }
 
 -- Using mason now
-vim.lsp.config('pyright', pyright_override)
+vim.lsp.config('basedpyright', based_pyright_override)
 vim.lsp.config('ltex_plus', ltex_override)
 vim.lsp.config('hls', hls_override)
 
@@ -47,7 +47,7 @@ vim.lsp.enable('clangd')
 vim.lsp.enable('gopls')
 -- vim.lsp.enable('golangci_lint_ls')
 vim.lsp.enable('ruff')
-vim.lsp.enable('pyright')
+vim.lsp.enable('basedpyright')
 vim.lsp.enable('lua_ls')
 vim.lsp.enable('elmls')
 vim.lsp.enable('hls')

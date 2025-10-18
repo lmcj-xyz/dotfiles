@@ -1,0 +1,21 @@
+output "Dell Inc. DELL P2414H 36WJX5CL0DDL" {
+    mode 1920x1080@60.000
+    position 0,1080
+    alias $STOLEN_MONITOR
+}
+
+output eDP-1 {
+    mode 1920x1080@60.010
+    position 0,0
+    alias $INTERNAL
+}
+
+profile docked {
+    output $INTERNAL disable
+    output $STOLEN_MONITOR enable
+}
+
+profile laptop {
+    output $INTERNAL enable
+    output $STOLEN_MONITOR disable
+}

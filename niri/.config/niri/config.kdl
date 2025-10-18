@@ -257,6 +257,7 @@ layout {
 // This line starts waybar, a commonly used bar for Wayland compositors.
 spawn-at-startup "waybar"
 spawn-at-startup "mako"
+spawn-at-startup "kanshi"
 spawn-at-startup "gammastep" "-l" "53.80075540:-1.54907740"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "syncthing" "serve" "--no-browser"
@@ -346,7 +347,8 @@ binds {
     Mod+Shift+Slash hotkey-overlay-title="Mostrar atajos importantes" { show-hotkey-overlay; }
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
-    Mod+Return hotkey-overlay-title="Abrir terminal: wezterm" { spawn "wezterm"; }
+    // Mod+Return hotkey-overlay-title="Abrir terminal: wezterm" { spawn "wezterm"; }
+    Mod+Return hotkey-overlay-title="Abrir terminal: alacritty" { spawn "alacritty"; }
     Mod+Space hotkey-overlay-title="Ejecutar applicación: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Bloquear pantalla: swaylock" { spawn "swaylock" "-s" "fill" "-k" "-i" "/home/firefly/Imágenes/wallpapers/plum-blossoms.jpg"; }
     Mod+Alt+P hotkey-overlay-title="Abrir diálogo de sesión: wlogout" { spawn "wlogout"; }

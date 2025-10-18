@@ -15,7 +15,8 @@
     ],
     "modules-right": [
         "tray",
-        "custom/power"
+        "wireplumber",
+        "custom/power",
     ],
     "niri/workspaces": {
         "format": "{value} {icon}",
@@ -57,5 +58,11 @@
         "format" : "󰤆",
         "tooltip": false,
         "on-click": "wlogout"
+    },
+    "wireplumber": {
+        "format": "{icon}   {volume}%",
+        "format-muted": "",
+        "on-click": "helvum",
+        "format-icons": ["", "", ""]
     }
 }
