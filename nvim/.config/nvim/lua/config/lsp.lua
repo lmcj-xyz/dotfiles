@@ -45,7 +45,6 @@ vim.lsp.config('hls', hls_override)
 
 vim.lsp.enable('clangd')
 vim.lsp.enable('gopls')
--- vim.lsp.enable('golangci_lint_ls')
 vim.lsp.enable('ruff')
 vim.lsp.enable('basedpyright')
 vim.lsp.enable('lua_ls')
@@ -55,7 +54,7 @@ vim.lsp.enable('fourmolu')
 vim.lsp.enable('ltex_plus')
 vim.lsp.enable('bashls')
 vim.lsp.enable('ocamllsp')
---vim.lsp.enable('harper_ls')
+vim.lsp.enable('rust_analyzer')
 
 vim.diagnostic.config({
     serverity_sort = true,
