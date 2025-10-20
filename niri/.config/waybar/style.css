@@ -172,3 +172,27 @@ button:hover {
 	color:          white;
 	background:     #333333;
 }
+#battery {
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    3px;
+	margin-right:   3px;
+	padding-left:   9px;
+	padding-right:  9px;
+	border-radius:  20px;
+	transition:     none;
+	color:          white;
+	background:     black;
+}
+#battery:hover {
+    margin-top:     3px;
+	margin-bottom:  3px;
+	margin-left:    3px;
+	margin-right:   3px;
+	padding-left:   9px;
+	padding-right:  9px;
+	border-radius:  20px;
+	transition:     none;
+	color:          white;
+	background:     #333333;
+}

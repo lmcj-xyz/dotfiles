@@ -16,10 +16,11 @@
     "modules-right": [
         "tray",
         "wireplumber",
+        "battery",
         "custom/power",
     ],
     "niri/workspaces": {
-        "format": "{value} {icon}",
+        "format": "{icon}",
         "format-icons": {
             "active": "",
             "default": ""
@@ -64,5 +65,16 @@
         "format-muted": "",
         "on-click": "helvum",
         "format-icons": ["", "", ""]
+    },
+    "battery": {
+        "bat": "BAT0",
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}   {capacity}%",
+        "format-icons": ["", "", "", "", ""],
+        "max-length": 25
     }
 }
