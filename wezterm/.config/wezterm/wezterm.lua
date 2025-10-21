@@ -5,6 +5,12 @@ local wezterm = require('wezterm')
 -- Using the wezterm API
 local config = wezterm.config_builder()
 local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
+local sessionizer = wezterm.plugin.require("https://github.com/mikkasendke/sessionizer.wezterm")
+local schema = {
+    sessionizer.DefaultWorkspace {},
+    sessionizer.AllActiveWorkspaces {},
+    sessionizer.FdSearch "~/Projects",
+}
 
 -- This is where you actually apply your config choices
 config.font = wezterm.font 'JuliaMonoNerdFont'
@@ -21,22 +27,23 @@ config.window_decorations = 'TITLE | RESIZE'
 -- Keybindings
 config.leader = { key = 'q', mods = 'CTRL', timeout_miliseconds = 1000 }
 config.keys = {
-  {
-    key = 'h',
-    mods = 'LEADER',
-    action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
-  },
-  {
-    key = 'v',
-    mods = 'LEADER',
-    action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
-  },
-  -- Send "CTRL-Q" to the terminal when pressing CTRL-Q, CTRL-Q
-  {
-    key = 'q',
-    mods = 'LEADER|CTRL',
-    action = wezterm.action.SendKey { key = 'a', mods = 'CTRL' },
-  },
+    {
+        key = 'h',
+        mods = 'LEADER',
+        action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
+    },
+    {
+        key = 'v',
+        mods = 'LEADER',
+        action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
+    },
+    -- Send "CTRL-Q" to the terminal when pressing CTRL-Q, CTRL-Q
+    {
+        key = 'q',
+        mods = 'LEADER|CTRL',
+        action = wezterm.action.SendKey { key = 'a', mods = 'CTRL' },
+    },
+    { key = "S", mods = "ALT", action = sessionizer.show(schema) },
 }
 
 
