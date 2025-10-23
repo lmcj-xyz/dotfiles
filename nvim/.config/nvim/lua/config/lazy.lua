@@ -26,6 +26,7 @@ require("lazy").setup({
     { import = "plugins.treesitter" },
     { import = "plugins.vimtex" },
     { import = "plugins.telescope" },
+    { import = "plugins.todo-comments" },
     -- { import = "plugins.neorg" },
     -- { import = "plugins.orgmode" },
   },
