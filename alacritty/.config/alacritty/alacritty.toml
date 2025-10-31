@@ -21,8 +21,8 @@ print_events = false
 render_timer = false
 
 [env]
-#term = "alacritty"
-term = "xterm-256color"
+term = "alacritty"
+# term = "xterm-256color"
 
 [font]
 builtin_box_drawing = true
@@ -534,7 +534,6 @@ program = "/bin/bash"
 decorations = "None"
 dynamic_padding = false
 dynamic_title = true
-#gtk_theme_variant = "None"
 opacity = 1.0
 startup_mode = "Maximized"
 title = "Alacritty"
@@ -556,13 +555,13 @@ x = 0
 y = 0
 
 [general]
+import = [
+    "~/.config/alacritty/themes/kanagawa_dragon.toml"
+]
 live_config_reload = true
 working_directory = "None"
 
 ipc_socket = true
-import = [
-    "~/.config/alacritty/themes/kanagawa_dragon.toml"
-]
 
 [colors.cursor]
 text = "#ffffff"
