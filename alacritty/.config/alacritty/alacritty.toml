@@ -21,8 +21,7 @@ print_events = false
 render_timer = false
 
 [env]
-term = "alacritty"
-# term = "xterm-256color"
+TERM = "xterm-256color"
 
 [font]
 builtin_box_drawing = true
@@ -512,12 +511,6 @@ action = "PasteSelection"
 mode = "~Vi"
 mouse = "Middle"
 
-#[mouse.double_click]
-#threshold = 300
-
-#[mouse.triple_click]
-#threshold = 300
-
 [scrolling]
 history = 10000
 multiplier = 3
@@ -570,5 +563,3 @@ cursor = "#ff00ff"
 [colors.vi_mode_cursor]
 text = "#ffffff"
 cursor = "#ff00ff"
-
-[terminal]

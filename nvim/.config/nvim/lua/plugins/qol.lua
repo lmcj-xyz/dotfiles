@@ -9,15 +9,15 @@ return {
             require('lualine').setup({})
         end
     },
-    --{ '3rd/image.nvim', },
     {
         "mason-org/mason.nvim",
         opts = {}
     },
-    {
-        "m4xshen/hardtime.nvim",
-        lazy = false,
-        dependencies = { "MunifTanjim/nui.nvim" },
-        opts = {},
-    },
+    -- { '3rd/image.nvim', },
+    -- {
+    --     "m4xshen/hardtime.nvim",
+    --     lazy = false,
+    --     dependencies = { "MunifTanjim/nui.nvim" },
+    --     opts = {},
+    -- },
 }
