@@ -15,8 +15,8 @@ vim.api.nvim_create_autocmd(
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 -- Buffer navigation
-vim.keymap.set({'n'}, '<leader>bn', vim.cmd.bnext, {desc='Go to next buffer in buffer list'})
-vim.keymap.set({'n'}, '<leader>bp', vim.cmd.bprevious, {desc='Go to previous buffer in buffer list'})
+vim.keymap.set({ 'n' }, '<leader>bn', vim.cmd.bnext, { desc = 'Go to next buffer in buffer list' })
+vim.keymap.set({ 'n' }, '<leader>bp', vim.cmd.bprevious, { desc = 'Go to previous buffer in buffer list' })
 
 -- Remap for dealing with word wrap.
 -- Allows you to change wrapped lines within long lines.
@@ -29,3 +29,9 @@ vim.keymap.set({'n'}, '<leader>bp', vim.cmd.bprevious, {desc='Go to previous buf
 
 -- Color scheme selection
 vim.cmd.colorscheme('kanagawa-dragon')
+
+vim.filetype.add({
+    extension = {
+        ['http'] = 'http',
+    },
+})

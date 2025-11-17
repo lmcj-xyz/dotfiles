@@ -27,6 +27,7 @@ require("lazy").setup({
     { import = "plugins.vimtex" },
     { import = "plugins.telescope" },
     { import = "plugins.todo-comments" },
+    { import = "plugins.kulala" },
     -- { import = "plugins.neorg" },
     -- { import = "plugins.orgmode" },
   },
