@@ -7,4 +7,4 @@ set -o vi
 export EDITOR=/opt/nvim/bin/nvim
 export VISUAL=/opt/nvim/bin/nvim
 export SUDO_EDITOR=/opt/nvim/bin/nvim
-export GIT_EDITOR=/opt/nvim/bin/nvim;;
+export GIT_EDITOR=/opt/nvim/bin/nvim
