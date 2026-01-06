@@ -57,6 +57,7 @@ vim.lsp.enable('ocamllsp')
 vim.lsp.enable('rust_analyzer')
 vim.lsp.enable('shellcheck')
 vim.lsp.enable('shfmt')
+vim.lsp.enable('superhtml')
 
 vim.diagnostic.config({
     serverity_sort = true,
