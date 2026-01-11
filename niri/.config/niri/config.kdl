@@ -261,7 +261,7 @@ spawn-at-startup "kanshi"
 spawn-at-startup "gammastep" "-l" "53.80075540:-1.54907740"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "syncthing" "serve" "--no-browser"
-spawn-at-startup "swaybg" "--image" "/home/firefly/Imágenes/wallpapers/plum-blossoms.jpg"
+spawn-at-startup "swaybg" "--image" "~/wallpapers/cumbres_de_majalca.jpg" "--mode" "fill"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.

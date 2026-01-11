@@ -10,6 +10,8 @@ else
     ~/Projects/playgrounds/*/ \
     ~/proyectos/ \
     ~/proyectos/playgrounds/*/ \
+    ~/cv/ \
+    ~/cv/*/ \
     \
     -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
