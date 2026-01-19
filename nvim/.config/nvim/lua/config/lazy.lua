@@ -28,6 +28,7 @@ require("lazy").setup({
     { import = "plugins.telescope" },
     { import = "plugins.todo-comments" },
     { import = "plugins.kulala" },
+    { import = "plugins.render-markdown" },
     -- { import = "plugins.neorg" },
     -- { import = "plugins.orgmode" },
   },
