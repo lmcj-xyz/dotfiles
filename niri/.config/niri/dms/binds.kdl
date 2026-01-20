@@ -47,4 +47,8 @@ binds {
     Mod+Alt+P hotkey-overlay-title="Abrir diálogo de sesión" {
         spawn "dms" "ipc" "call" "powermenu" "toggle";
     }
+
+    Mod+Shift+Slash hotkey-overlay-title="Mostrar atajos importantes" {
+        spawn "dms" "ipc" "call" "keybinds" "toggle" "niri";
+    }
 }
