@@ -383,7 +383,7 @@ binds {
     Mod+Return hotkey-overlay-title="Abrir terminal: alacritty" { spawn "alacritty"; }
     // Mod+Space hotkey-overlay-title="Ejecutar applicación: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Bloquear pantalla: swaylock" { spawn "swaylock" "-s" "fill" "-k" "-i" "/home/firefly/Imágenes/wallpapers/plum-blossoms.jpg"; }
-    Mod+Alt+P hotkey-overlay-title="Abrir diálogo de sesión: wlogout" { spawn "wlogout"; }
+    // Mod+Alt+P hotkey-overlay-title="Abrir diálogo de sesión: wlogout" { spawn "wlogout"; }
 
     // Bindings for applications control
     Mod+D hotkey-overlay-title="Eliminar última notificación" { spawn "makoctl" "dismiss"; }

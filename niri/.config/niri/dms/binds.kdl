@@ -42,4 +42,9 @@ binds {
     XF86MonBrightnessDown allow-when-locked=true {
        spawn "dms" "ipc" "call" "brightness" "decrement" "5" "";
     }
+
+    // Power
+    Mod+Alt+P hotkey-overlay-title="Abrir diálogo de sesión" {
+        spawn "dms" "ipc" "call" "powermenu" "toggle";
+    }
 }
