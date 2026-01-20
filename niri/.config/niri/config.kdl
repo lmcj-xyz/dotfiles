@@ -255,13 +255,13 @@ layout {
 // See the binds section below for more spawn examples.
 
 // This line starts waybar, a commonly used bar for Wayland compositors.
-spawn-at-startup "waybar"
+// spawn-at-startup "waybar"
 spawn-at-startup "mako"
 spawn-at-startup "kanshi"
 spawn-at-startup "gammastep" "-l" "53.80075540:-1.54907740"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "syncthing" "serve" "--no-browser"
-spawn-at-startup "sh" "-c" "swaybg" "--image" "~/wallpapers/cumbres_de_majalca.jpg" "--mode" "fill"
+// spawn-at-startup "sh" "-c" "swaybg" "--image" "~/wallpapers/cumbres_de_majalca.jpg" "--mode" "fill"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -349,7 +349,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     // Mod+Return hotkey-overlay-title="Abrir terminal: wezterm" { spawn "wezterm"; }
     Mod+Return hotkey-overlay-title="Abrir terminal: alacritty" { spawn "alacritty"; }
-    Mod+Space hotkey-overlay-title="Ejecutar applicación: fuzzel" { spawn "fuzzel"; }
+    // Mod+Space hotkey-overlay-title="Ejecutar applicación: fuzzel" { spawn "fuzzel"; }
     Super+Alt+L hotkey-overlay-title="Bloquear pantalla: swaylock" { spawn "swaylock" "-s" "fill" "-k" "-i" "/home/firefly/Imágenes/wallpapers/plum-blossoms.jpg"; }
     Mod+Alt+P hotkey-overlay-title="Abrir diálogo de sesión: wlogout" { spawn "wlogout"; }
 
@@ -363,9 +363,9 @@ binds {
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
-    XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
-    XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
-    XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
+    // XF86AudioRaiseVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1+"; }
+    // XF86AudioLowerVolume allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "0.1-"; }
+    // XF86AudioMute        allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
     XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
@@ -525,7 +525,7 @@ binds {
     Mod+BracketRight { consume-or-expel-window-right; }
 
     // Consume one window from the right to the bottom of the focused column.
-    Mod+Comma  { consume-window-into-column; }
+    // Mod+Comma  { consume-window-into-column; }
     // Expel the bottom window from the focused column to the right.
     Mod+Period { expel-window-from-column; }
 
@@ -560,7 +560,7 @@ binds {
     Mod+Shift+Equal { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
-    Mod+V hotkey-overlay-title="Mover ventana entre el modo flotante y en mosaico"       { toggle-window-floating; }
+    Mod+Alt+V hotkey-overlay-title="Mover ventana entre el modo flotante y en mosaico"       { toggle-window-floating; }
     Mod+Shift+V hotkey-overlay-title="Cambiar enfoque entre el modo flotante y en mosaico" { switch-focus-between-floating-and-tiling; }
 
     // Toggle tabbed column display mode.
@@ -602,3 +602,9 @@ binds {
 environment {
     DISPLAY ":0"
 }
+
+// DMS
+include "dms/colors.kdl"
+include "dms/layout.kdl"
+include "dms/alttab.kdl"
+include "dms/binds.kdl"
