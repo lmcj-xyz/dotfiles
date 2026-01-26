@@ -524,7 +524,7 @@ args = ["--login"]
 program = "/bin/bash"
 
 [window]
-decorations = "None"
+decorations = "Full"
 dynamic_padding = false
 dynamic_title = true
 opacity = 1.0
