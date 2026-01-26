@@ -254,8 +254,11 @@ layout {
 // which may be more convenient to use.
 // See the binds section below for more spawn examples.
 
+spawn-at-startup "waybar"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "syncthing" "serve" "--no-browser"
+spawn-at-startup "gammastep"
+spawn-at-startup "nm-applet"
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
 // If the client will specifically ask for CSD, the request will be honored.
@@ -351,12 +354,6 @@ window-rule {
     clip-to-geometry true
 }
 
-// Open DMS windows as floating by default
-window-rule {
-    match app-id=r#"org.quickshell$"#
-    open-floating true
-}
-
 hotkey-overlay {
     skip-at-startup
 }
@@ -378,6 +375,9 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return hotkey-overlay-title="Abrir terminal: alacritty" { spawn "alacritty"; }
     Super+Alt+L hotkey-overlay-title="Bloquear pantalla: swaylock" { spawn "swaylock" "-s" "fill" "-k" "-i" "/home/firefly/Imágenes/wallpapers/plum-blossoms.jpg"; }
+    Mod+Space hotkey-overlay-title="Abrir lanzador: fuzzel" { spawn "fuzzel"; }
+    Mod+0 hotkey-overlay-title="Mostrar atajos" { show-hotkey-overlay; }
+    Mod+Alt+P hotkey-overlay-title="Administración de sesión: wlogout" { spawn "wlogout"; }
 
     // Bindings for applications control
     Mod+D hotkey-overlay-title="Eliminar última notificación" { spawn "makoctl" "dismiss"; }
@@ -630,11 +630,3 @@ environment {
     QT_QPA_PLATFORMTHEME "gtk3"
     QT_QPA_PLATFORMTHEME_QT6 "gtk3f"
 }
-
-// DMS
-include "dms/colors.kdl"
-include "dms/layout.kdl"
-include "dms/alttab.kdl"
-include "dms/binds.kdl"
-include "dms/cursor.kdl"
-include "dms/outputs.kdl"
