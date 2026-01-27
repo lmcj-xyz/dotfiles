@@ -43,10 +43,10 @@ bindsym $mod+e exec papersway-msg absorb-expel left
 bindsym $mod+r exec papersway-msg absorb-expel right
 bindsym $mod+minus exec papersway-msg cols decr
 bindsym $mod+equal exec papersway-msg cols incr
-bindsym $mod+u exec papersway-msg workspace prev
-bindsym $mod+i exec papersway-msg workspace next
-bindsym $mod+Shift+u exec papersway-msg move-to-workspace prev
-bindsym $mod+Shift+i exec papersway-msg move-to-workspace next
+bindsym $mod+i exec papersway-msg workspace prev
+bindsym $mod+u exec papersway-msg workspace next
+bindsym $mod+Shift+i exec papersway-msg move-to-workspace prev
+bindsym $mod+Shift+u exec papersway-msg move-to-workspace next
 bindsym $mod+c [con_mark=caffeinated] inhibit_idle none; \
     inhibit_idle open, mark caffeinated
 bindsym $mod+Shift+c [con_mark=caffeinated] inhibit_idle none, \
