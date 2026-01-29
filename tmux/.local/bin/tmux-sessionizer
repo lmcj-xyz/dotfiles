@@ -12,7 +12,8 @@ else
     ~/proyectos/playgrounds/*/ \
     ~/cv/ \
     ~/cv/*/ \
-    \
+    ~/Dropbox/Luis-Mario-Supervision/ \
+    ~/Dropbox/ \
     -mindepth 1 -maxdepth 1 -type d | fzf)
 fi
 
@@ -20,7 +21,7 @@ if [[ -z $selected ]]; then
     exit 0
 fi
 
-selected_name=$(basename "$selected" | tr . _ | tr '[:upper:]' '[:lower:]')
+selected_name=$(basename "$selected" | tr '[:space:]' _ | tr . _ | tr '[:upper:]' '[:lower:]')
 tmux_running=$(pgrep tmux)
 
 if [[ -z $TMUX ]] && [[ -z $tmux_running ]]; then
