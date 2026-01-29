@@ -391,6 +391,9 @@ binds {
 
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
+    XF86AudioRaiseVolume hotkey-overlay-title="Aumentar volumen" allow-when-locked=true { spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+"; }
+    XF86AudioLowerVolume hotkey-overlay-title="Reducir volumen" allow-when-locked=true {  spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-";}
+    XF86AudioMute hotkey-overlay-title="Silenciar altavoz" allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"; }
     XF86AudioMicMute hotkey-overlay-title="Silenciar micrófono" allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
     XF86AudioPlay allow-when-locked=true { spawn "playerctl" "play-pause"; }
