@@ -21,7 +21,7 @@ bindsym $mod+Right exec papersway-msg focus right
 bindsym $mod+Shift+Left exec papersway-msg move left
 bindsym $mod+Shift+Down move down
 bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move exec papersway-msg move right
+bindsym $mod+Shift+Right exec papersway-msg move right
 # Movement vi mode
 bindsym $mod+h exec papersway-msg focus left
 bindsym $mod+j focus down
